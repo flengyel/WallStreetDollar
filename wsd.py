@@ -70,7 +70,7 @@ class WSD(object):
     if len(self.lines) > 1000:
       self.lines = self.lines[1:]
     wsd = moneyfmt(Decimal(r.randint(5,145))/Decimal('100'))
-    self.lines = ["Date,USD"] + \
+    self.lines = ["Date,WSD/USD"] + \
 		 self.lines + \
        [datetime.datetime.today().strftime("%Y-%m-%d %H:%M") + ',' + wsd]    
     self.f.seek(0)
