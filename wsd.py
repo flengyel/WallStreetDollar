@@ -66,10 +66,10 @@ class WSD(object):
     self.lines = self.lines[1:] # drop the header
 
   def addrandom(self, r):
-    """Append r, checklength > 200 and drop first"""
-    if len(self.lines) > 200:
+    """Append r, checklength > 1000 and drop first"""
+    if len(self.lines) > 1000:
       self.lines = self.lines[1:]
-    wsd = moneyfmt(Decimal(r.randint(1,145))/Decimal('100'))
+    wsd = moneyfmt(Decimal(r.randint(5,145))/Decimal('100'))
     self.lines = ["Date,USD"] + \
 		 self.lines + \
        [datetime.datetime.today().strftime("%Y-%m-%d %H:%M") + ',' + wsd]    
