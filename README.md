@@ -21,17 +21,19 @@ for five 120 point times spaced 3 minutes apart, beginning at midnight,
 Eastern Standard Time.  One day equals 420 points. The display of 600 points 
 will ensure that at least one date will be visible on the display.
 
-## Prerequisites ##
-pip install randomdotorg
-Twitter's bootstrap (html5,css,js) library
-dygraph
-
-wsd.sh
 The file wsd.sh is called by a crontab entry every few minutes; this
-calls wsd.py and writes wsd.csv. The crontab line is
+calls wsd.py and writes wsd.csv. The crontab line is something like
 */3 * * * * /var/www/html/wsd/wsd.sh
+
+
+## Prerequisites ##
+* [RandomDotOrg](
+* [Twitter's Bootstrap](http://twitter.github.com/bootstrap/) (html5,css,js) library
+*  Dygraphs [dygraph-combined.js](http://dygraph.com/dygrph-combined.js)
+*  [moneyfmt](
 
 ## License ##
 
 (c) 2010-2012, Florian Lengyel florian.lengyel@gmail.com
 The text is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA-3.0)  license](http://creativecommons.org/licenses/by-nc-sa/3.0/).  My code is licensed under the GNU General Public License, version 2. All other code (bootstrap, randomdotorg, dygraph) is licensed separately.
+Twitter's Bootstrap is licensed under the [Apache License v2.0](http://www.apache.org/licenses/LICENSE-2.0). Dygraphs is copyright (c) 2009 Dan Vanderkan, as in LICENCE.txt
