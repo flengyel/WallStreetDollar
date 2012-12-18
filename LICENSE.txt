@@ -1,9 +1,18 @@
 (c) 2010-2012, Florian Lengyel florian.lengyel@gmail.com
-The text is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA-3.0)  license](http://creativecommons.org/licenses/by-nc-sa/3.0/).  My code is licensed under the GNU General Public License, version 2. 
+The text is licensed under a Creative Commons 
+Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA-3.0)  
+license. http://creativecommons.org/licenses/by-nc-sa/3.0/.  
+My code is licensed under the GNU General Public License, version 2. 
 
-Twitter's Bootstrap is licensed under the [Apache License v2.0](http://www.apache.org/licenses/LICENSE-2.0).
+Twitter's Bootstrap is licensed under the Apache License v2.0.
+http://www.apache.org/licenses/LICENSE-2.0.
 
-dygraph-combined.js Copyright (c) 2009 Dan Vanderkam
+RandomDotOrg http://code.google.com/p/randomdotorg/
+is licensed under the GPLv3
+GNU General Public License http://www.gnu.org/licenses/gpl.html
+
+dygraph-combined.js is copyright (c) 2009 Dan Vanderkam, whose
+notice is reproduced below:
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
