@@ -27,13 +27,16 @@ calls wsd.py and writes wsd.csv. The crontab line is something like
 
 
 ## Prerequisites ##
-* [RandomDotOrg](
+* [RandomDotOrg](http://code.google.com/p/randomdotorg/)
 * [Twitter's Bootstrap](http://twitter.github.com/bootstrap/) (html5,css,js) library
-*  Dygraphs [dygraph-combined.js](http://dygraph.com/dygrph-combined.js)
-*  [moneyfmt](
+*  Dygraphs [dygraph-combined.js](https://github.com/danvk/dygraphs)
+* [moneyfmt](http://docs.python.org/2/library/decimal.html#recipies)
 
 ## License ##
 
 (c) 2010-2012, Florian Lengyel florian.lengyel@gmail.com
 The text is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA-3.0)  license](http://creativecommons.org/licenses/by-nc-sa/3.0/).  My code is licensed under the GNU General Public License, version 2. All other code (bootstrap, randomdotorg, dygraph) is licensed separately.
-Twitter's Bootstrap is licensed under the [Apache License v2.0](http://www.apache.org/licenses/LICENSE-2.0). Dygraphs is copyright (c) 2009 Dan Vanderkan, as in LICENCE.txt
+Twitter's Bootstrap is licensed under the 
+[Apache License v2.0](http://www.apache.org/licenses/LICENSE-2.0). 
+Dygraphs is [copyright (c) 2009 Dan Vanderka](https://github.com/danvk/dygraphs/blob/master/LICENSE.txt), as in LICENCE.txt. 
+RandomDotOrg is licensed under the GPL v3.
