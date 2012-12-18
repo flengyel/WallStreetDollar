@@ -39,4 +39,4 @@ The text is licensed under a [Creative Commons Attribution-NonCommercial-ShareAl
 Twitter's Bootstrap is licensed under the 
 [Apache License v2.0](http://www.apache.org/licenses/LICENSE-2.0). 
 Dygraphs is [copyright (c) 2009 Dan Vanderka](https://github.com/danvk/dygraphs/blob/master/LICENSE.txt), as in LICENCE.txt. 
-RandomDotOrg is licensed under the GPL v3.
+RandomDotOrg is licensed under the [GPL v3](http://www.gnu.org/licenses/gpl.html).
