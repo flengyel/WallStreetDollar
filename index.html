@@ -4,6 +4,10 @@
 <meta charset="utf-8">
 <title>Wall Street Dollar</title>
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.css" />
+ <!--[if lte IE 8]>
+   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.ie.css" />
+ <![endif]-->
 <style type="text/css"> 
 body { 
 text-align:justify;  
@@ -13,8 +17,9 @@ color:black;
 background-color:#aacc99; 
 font:1em 'Helvetica Neue', Arial, Verdana, sans-serif; 
 line-height:1.4em; }
-a { color:midnight-blue; font-weight:bold; }
+a { color:crimson; font-weight:bold; }
 #header {text-align:center; margin:1.5em 0;}
+#map { height: 180px; }
 </style> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
@@ -96,6 +101,24 @@ a { color:midnight-blue; font-weight:bold; }
       </p>
     </div>
     <div class="span12">
+    <div id="map"></div>
+    <script src="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.js"></script>
+    <script>
+      var map = L.map('map').setView([40.70917, -74.01119], 18);
+      L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', { maxZoom: 18,
+	attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
+      }).addTo(map);
+      L.marker([40.70921, -74.01125]).addTo(map)
+      .bindPopup("<b>WSD Exchange</b><br />Proposed site.").openPopup();
+      var popup = L.popup();
+      function onMapClick(e) {
+	popup
+	  .setLatLng(e.latlng)
+	  .setContent(e.latlng.toString())
+  	  .openOn(map);
+      }
+      map.on('click', onMapClick);
+    </script>
       <h3>Frequently Asked Questions</h3>
     </div>
     <div class="span6">
@@ -223,9 +246,9 @@ a { color:midnight-blue; font-weight:bold; }
       </script>
     </div>
     <div class="span6">
-      <p>
+      <small>
       Wall Street Dollar by <a href="https://plus.google.com/u/0/111972627358501525662/posts" property="cc:attributionName" rel="cc:attributionURL">F. Lengyel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License</a>.
-      </p>
+      </small>
     </div>
   </div>
 </div>
